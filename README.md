@@ -1,2 +1,2 @@
 # automatic-spork
-qizilatirgulliatirgul
+nma gap tichni
