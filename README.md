@@ -1,2 +1,2 @@
 # automatic-spork
-nma gap tichni
+nma gap tinchmi
