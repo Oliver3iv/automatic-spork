@@ -1,0 +1,16 @@
+PAINKILLER - Makes you immortal
+TURTLE - Recharges health and armour
+FUGITIVE - Increases search level
+LAWYERUP - Reduces search level
+POWERUP - Recharges special ability
+LIQUOR - Drunk mode
+SLOWMO - Slow motion mode
+DEADEYE - Slow-motion aiming
+CATCHME - Fast running
+GOTGILLS - Fast swim
+HOPTOIT - Super jump
+SKYDIVE - Grants a parachute
+SKYFALL - Glides through the sky
+FLOATER - Changes gravity
+MAKEITRAIN - Changes the weather
+SNOWDAY - Skidding vehicles
