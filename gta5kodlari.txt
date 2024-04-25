@@ -14,3 +14,54 @@ SKYFALL - Glides through the sky
 FLOATER - Changes gravity
 MAKEITRAIN - Changes the weather
 SNOWDAY - Skidding vehicles
+public class City
+      {
+          public string Name { get; set; }
+          public Dictionary<City, int> qoshnilar { get; set; }
+
+          public City(string name)
+          {
+              Name = name;
+              qoshnilar = new Dictionary<City, int>();
+          }
+
+          public void qoshni_qoshish(City qoshni, int masofa)
+          {
+              qoshnilar[qoshni] = masofa;
+          }
+      }
+       class asosiy
+       {
+      static void Main(string[] args)
+              {
+              // Шаҳарларни яратамиз
+              City tashkent = new City("Tashkent");
+              City samarkand = new City("Samarkand");
+              City bukhara = new City("Bukhara");
+              City khiva = new City("Khiva");
+              City Nukus = new City("Nukus");
+            City Jizzax = new City("Jizzax");
+            City Sirdaryo = new City("Sirdaryo");
+
+           // City samarqand = new City("samarqand");
+            // Шаҳарлар орасидаги масофаларни киритамиз
+            tashkent.qoshni_qoshish(samarkand, 300);
+             tashkent.qoshni_qoshish(bukhara, 600);
+              samarkand.qoshni_qoshish(bukhara, 250);
+              bukhara.qoshni_qoshish(khiva, 400);
+              khiva.qoshni_qoshish(Nukus, 250);
+            Jizzax.qoshni_qoshish(Sirdaryo, 150);
+            Jizzax.qoshni_qoshish(samarkand, 150);
+            // Шаҳарлар ва уларнинг қўшни шаҳарларини чоп этамиз
+            Console.WriteLine("City Neighbors:");
+              foreach (var city in new[] { tashkent, samarkand, bukhara, khiva,Jizzax })
+              {
+                  Console.WriteLine($"{city.Name}:");
+                  foreach (var qoshni in city.qoshnilar)
+                  {
+                      Console.WriteLine($"  {qoshni.Key.Name} ({qoshni.Value} km)");
+                  }
+                  Console.WriteLine();
+              }
+              Console.ReadKey(); 
+              }
